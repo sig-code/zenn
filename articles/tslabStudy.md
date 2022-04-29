@@ -1,3 +1,10 @@
+---
+title: "TypeScript勉強会の復習"
+emoji: "👣"
+type: "tech"
+topics: ["typescript"]
+published: true
+---
 # tsLabというTypeScript勉強会の復習
 
 先日、私が参加している勉強会で、一問一答のTypeScriptで復習する機会がありました。
