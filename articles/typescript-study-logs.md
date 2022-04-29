@@ -263,9 +263,6 @@ console.log(title);
 - ただし、値が`null`や`undefined`ではないことわかっている場合のみ使用するべき
 - null許容型`(T | null | undefined)`に対して、使用すると`null | undefined`ではなく`T`であることをコンパイラに明示できる
 
-```tsx
-document.get
-```
 
 - [https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#non-null-assertion-operator-postfix-](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#non-null-assertion-operator-postfix-)
 - [https://zenn.dev/oreo2990/articles/3d780560c5e552#%E9%9D%9Enull%E3%82%A2%E3%82%B5%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E6%BC%94%E7%AE%97%E5%AD%90(!)](https://zenn.dev/oreo2990/articles/3d780560c5e552#%E9%9D%9Enull%E3%82%A2%E3%82%B5%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E6%BC%94%E7%AE%97%E5%AD%90(!))
@@ -423,7 +420,7 @@ type MyCondition<T, U, X, Y> = T extends U ? X : Y;
 Conditional Typesの性質
 - 遅延評価:X,Yの決定に対して、T,Uという型変数への依存がある場合、型の解決はT,Uが決定されるまで評価が遅延される
 - Union typesの分配則: Union typesのConditional Typesは、それぞれのConditional TypesのUnionに展開される
-例
+
 ```tsx
 (T1 | T2) extends U ? X : Y = (T1 extends U ? X : Y) | (T2 extends U ? X : Y)
 ```
