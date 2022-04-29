@@ -1,0 +1,17 @@
+{
+  "name": "zenn-docs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "npx textlint",
+    "fix": "npx textlint --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "zenn-cli": "^0.1.109"
+
+  }
+}
